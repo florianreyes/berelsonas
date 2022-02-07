@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import React, { useState, useEffect } from "react";
+import List from "./List";
+import maquinas from "./maquinas";
 
 function App() {
+  const [list, setList] = useState(maquinas);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <img src={require("./berelsonas_logo.png")} alt="logo" />
       </header>
+      <div className="Display">
+        <h3>Imagen</h3>
+        <h3>Nombre</h3>
+        <h3>Precio</h3>
+        <h3>Stock</h3>
+        <h3>Marca</h3>
+        <h3>id</h3>
+        <h3>Categoria</h3>
+      </div>
+
+      <article>
+        <List list={list} />
+      </article>
     </div>
   );
 }
