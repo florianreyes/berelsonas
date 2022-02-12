@@ -1,5 +1,5 @@
 import React from "react";
-import "./List.css";
+import "./styling/List.css";
 
 function List({ list }) {
   return (

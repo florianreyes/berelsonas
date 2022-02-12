@@ -1,4 +1,4 @@
-import "./App.css";
+import "./styling/App.css";
 
 import React, { useState, useEffect } from "react";
 import List from "./List";
@@ -9,7 +9,7 @@ function App() {
 
   return (
     <div className="App">
-      <header>
+      <header style={{ position: "sticky" }}>
         <img src={require("./berelsonas_logo.png")} alt="logo" />
       </header>
       <div className="Display">
