@@ -6,6 +6,7 @@ import Vender from "./components/Vender";
 import Reservar from "./components/Reservar";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Button from "react-bootstrap/Button";
 
 ReactDOM.render(
   <BrowserRouter>
