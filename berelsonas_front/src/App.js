@@ -1,8 +1,8 @@
 import "./styling/App.css";
 
 import React, { useState, useEffect } from "react";
-import List from "./List";
-import maquinas from "./maquinas";
+import List from "./components/List";
+import maquinas from "./components/maquinas";
 
 function App() {
   const [list, setList] = useState(maquinas);
@@ -13,13 +13,13 @@ function App() {
         <img src={require("./berelsonas_logo.png")} alt="logo" />
       </header>
       <div className="Display">
-        <h3>Imagen</h3>
-        <h3>Nombre</h3>
-        <h3>Precio</h3>
-        <h3>Stock</h3>
-        <h3>Marca</h3>
-        <h3>id</h3>
-        <h3>Categoria</h3>
+        <h6>Imagen</h6>
+        <h6>Nombre</h6>
+        <h6>Precio</h6>
+        <h6>Stock</h6>
+        <h6>Marca</h6>
+        <h6>id</h6>
+        <h6>Categoria</h6>
       </div>
 
       <article>

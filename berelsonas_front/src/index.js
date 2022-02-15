@@ -2,12 +2,19 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./styling/index.css";
 import App from "./App";
+import Vender from "./components/Vender";
+import Reservar from "./components/Reservar";
 import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="Vender" element={<Vender />} />
+      <Route path="Reservar" element={<Reservar />} />
+    </Routes>
+  </BrowserRouter>,
   document.getElementById("root")
 );
 
