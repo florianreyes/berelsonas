@@ -4,16 +4,18 @@ import "./styling/index.css";
 import App from "./App";
 import Vender from "./components/Vender";
 import Reservar from "./components/Reservar";
+import Stock from "./components/Stock";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Button from "react-bootstrap/Button";
 
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="Vender" element={<Vender />} />
-      <Route path="Reservar" element={<Reservar />} />
+      <Route path="/" element={<App />}>
+        <Route index element={<Stock />} />
+        <Route path="Vender" element={<Vender />} />
+        <Route path="Reservar" element={<Reservar />} />
+      </Route>
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")

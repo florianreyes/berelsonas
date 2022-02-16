@@ -22,3 +22,12 @@
   grid-template-columns: repeat(9, 1fr);
   align-items: center;
 }
+.foto {
+  height: 300px;
+  width: 300px;
+  border-radius: 6px;
+  border: 2px solid #3f69fa;
+}
+.input {
+  margin-top: 15px;
+}

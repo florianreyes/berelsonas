@@ -2,7 +2,7 @@ import React from "react";
 import "../styling/List.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from "react-bootstrap/Button";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function List({ list }) {
   const navigate = useNavigate();
@@ -22,7 +22,7 @@ function List({ list }) {
             <h5>{categoria}</h5>
             <div className="col-xs-2">
               <Button
-                onClick={() => navigate("vender")}
+                onClick={() => navigate("/vender")}
                 type="button"
                 variant="primary"
               >
@@ -31,7 +31,7 @@ function List({ list }) {
             </div>
             <div className="col-xs-2">
               <Button
-                onClick={() => navigate("vender")}
+                onClick={() => navigate("/reservar")}
                 type="button"
                 variant="primary"
               >
