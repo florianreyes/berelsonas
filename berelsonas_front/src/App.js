@@ -9,7 +9,6 @@ function App() {
       <header style={{ position: "sticky" }}>
         <img src={require("./berelsonas_logo.png")} alt="logo" />
       </header>
-
       <Outlet />
     </div>
   );
